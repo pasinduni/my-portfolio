@@ -12,11 +12,8 @@ html, body{
 /* CSS Variables */ 
 
 :root{
-    --primary-color: #0a1c8c;
-    --hover-color: #2e3bed;
     --title-color: #5f5f5f;
     --text-color: #645f5f;    
-    --gradient-color: linear-gradient(135deg, #0a1c8c 50%, #4d0a8c 50%);
     --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.246);
     --box-shadow: 10px 10px 20px rgba(69, 69, 69, 0.53);
    
@@ -24,3 +21,4 @@ html, body{
     /* font family variables. */ 
     --roboto: 'Roboto', cursive;
 } 
+ 
