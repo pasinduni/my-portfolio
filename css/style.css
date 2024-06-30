@@ -13,7 +13,10 @@
 
 .header_area .main-menu .navbar .navbar-brand {
     padding: 0 2rem 0 5rem;
-    color: linear-gradient(#113ba6, #1c77ab)'';
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar .navbar-brand span{
 }
 
 .header_area .main-menu .navbar {
@@ -34,6 +37,12 @@
     color: var(--title-color);
 }
 
+.header_area .main-menu .navbar-nav .nav-item.active .nav-link::after {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #3621f3, #08b1ff);
+}
+
 .header_area .main-menu .navbar-nav .nav-item .nav-link:hover {
     background: linear-gradient(to right, #3621f3, #08b1ff);
     -webkit-background-clip: text;
@@ -46,20 +55,14 @@
 /* Banner Area */
 
 .site-main {
-    /* background: url(../img/banner/home-banner.svg) no-repeat 0% 0%; */
-    background-size: 100% 20%;
-    background-color: #000000;
+    background-color: #020202;
 }
 
 .site-main .site-banner .site-title {
     line-height: 10px;
     letter-spacing: 3px;
     color: #ffffff;
-}
-
-.site-main .site-banner .site-title h3 {
-    padding-top: 8%;
-    font-weight: 500;
+    padding-top: 7%;
 }
 
 .site-main .site-banner .site-title h1 {
@@ -75,7 +78,7 @@
 
 .site-main .site-banner .banner-image {
     position: relative;
-    padding: 7rem 0;
+    padding: 3rem 0;
 }
 
 .site-main .site-banner .banner-image>img {
@@ -86,7 +89,7 @@
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 1;
-    top: -10%;
+    top: 3%;
     left: 5%;
 }
 
@@ -100,7 +103,7 @@
     height: 20rem;
     /* Adjust size for the ring */
     border-radius: 50%;
-    background: linear-gradient(135deg, #4f20f78c, #a62df778);
+    background: linear-gradient(135deg, #4f20f77d, #a62df764);
     transform: translate(-50%, -50%);
     z-index: 1;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -126,7 +129,8 @@
     display: block;
     font: normal bold 49px/ 60px var(--roboto);
     letter-spacing: 18px;
-    color: #d5d4d4;
+    color: var(--title-color);
+    margin-bottom: 3rem;
 }
 
 .site-main .about-area .about-title .paragraph>p {
@@ -143,7 +147,7 @@
     /* border: 2px solid; */
     border-radius: 7px;
     margin-top: 1rem;
-    box-shadow: 5px 5px 8px #8c8c8c;
+    box-shadow: 5px 5px 8px #1d1d1d;
     background: rgba(64, 64, 64, 0.046);
     transition: box-shadow .7s ease;
 }
@@ -171,7 +175,8 @@
     display: block;
     font: normal bold 49px/ 60px var(--roboto);
     letter-spacing: 18px;
-    color: #d5d4d4;
+    color: var(--title-color);
+    margin-bottom: 5rem;
 }
 
 .slider {
@@ -184,7 +189,7 @@
 
 .slider::before,
 .slider::after {
-    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, #000000 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100%;
     position: absolute;
@@ -249,7 +254,9 @@
     display: block;
     font: normal bold 49px/60px var(--roboto);
     letter-spacing: 18px;
-    color: #d5d4d4;
+    color: var(--title-color);
+    margin-bottom: 3rem;
+    margin-top: 5rem;
 }
 
 .site-main .project-area .grid .element-item {
@@ -274,6 +281,7 @@
     font: normal 500 16px/130px var(--roboto);
     text-transform: uppercase;
     margin-right: 10px;
+    color: var(--text-color);
 }
 
 .site-main .project-area .button-group button+button {
@@ -351,13 +359,13 @@
 }
 
 .site-main .contact-area .contact .contact-title h4 {
-    color: #484646;
+    color: var(--title-color);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .site-main .contact-area .contact .contact-title .para {
-    color: rgb(117, 117, 117);
+    color: var(--text-color);
     font-size: 1rem;
     margin-bottom: 3rem;
 }
@@ -365,14 +373,17 @@
 .site-main .contact-area .contact-details {
     align-items: center;
     margin: .5rem 8rem;
-    color: var(--title-color);
+    color: var(--text-color);
 }
 
 .site-main .contact-area .contact-details p {
     padding: 12px;
     border: .1px solid;
     border-radius: 7px;
-    color: var(--text-color) !important;
+}
+
+.site-main .contact-area .contact-details  a{
+    color: var(--text-color);
 }
 
 .site-main .contact-area .contact-details .text-center {
@@ -402,11 +413,6 @@ footer.footer-area .copyrights .para {
 
 
 @media only screen and (max-width: 428px) {
-
-    .site-main {
-        background: url(../img/banner/home-banner.svg) no-repeat 0% 0%;
-        background-size: auto 15%;
-    }
 
     .site-main .site-banner .banner-image {
         position: relative;
@@ -552,14 +558,7 @@ footer.footer-area .copyrights .para {
 
 
 
-
 @media only screen and (max-width: 768px) {
-
-    .site-main {
-        /* background: url(../img/banner/home-banner.svg) no-repeat 0% 0%; */
-        background-size: auto 15%;
-        background-color: #000000;
-    }
 
     .site-main .site-banner .banner-image {
         position: relative;
