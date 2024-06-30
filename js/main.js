@@ -60,4 +60,56 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     });
 
+
+   function addArrowEventListeners() {
+    document.getElementById('left-arrow').addEventListener('click', function() {
+        document.querySelector('.button-group').scrollBy({
+            top: 0,
+            left: -100,
+            behavior: 'smooth'
+        });
+    });
+
+    document.getElementById('right-arrow').addEventListener('click', function() {
+        document.querySelector('.button-group').scrollBy({
+            top: 0,
+            left: 100,
+            behavior: 'smooth'
+        });
+    });
+}
+
+function removeArrowEventListeners() {
+    document.getElementById('left-arrow').removeEventListener('click', function() {
+        document.querySelector('.button-group').scrollBy({
+            top: 0,
+            left: -100,
+            behavior: 'smooth'
+        });
+    });
+
+    document.getElementById('right-arrow').removeEventListener('click', function() {
+        document.querySelector('.button-group').scrollBy({
+            top: 0,
+            left: 100,
+            behavior: 'smooth'
+        });
+    });
+}
+
+function checkScreenWidth() {
+    if (window.innerWidth <= 600) {
+        addArrowEventListeners();
+    } else {
+        removeArrowEventListeners();
+    }
+}
+
+// Check screen width on load
+checkScreenWidth();
+
+// Check screen width on resize
+window.addEventListener('resize', checkScreenWidth);
+
+
 });
