@@ -16,8 +16,11 @@
     color: var(--title-color);
 }
 
-.header_area .main-menu .navbar .navbar-brand span{
+.navbar-toggler{
+    background-color: #8c8c8c;
 }
+
+.header_area .main-menu .navbar .navbar-brand span {}
 
 .header_area .main-menu .navbar {
     padding: 1rem 20rem;
@@ -382,7 +385,7 @@
     border-radius: 7px;
 }
 
-.site-main .contact-area .contact-details  a{
+.site-main .contact-area .contact-details a {
     color: var(--text-color);
 }
 
@@ -413,6 +416,9 @@ footer.footer-area .copyrights .para {
 
 
 @media only screen and (max-width: 428px) {
+    .header_area .main-menu .navbar .navbar-brand{
+        padding: 0 1rem ;
+    }
 
     .site-main .site-banner .banner-image {
         position: relative;
@@ -482,7 +488,7 @@ footer.footer-area .copyrights .para {
         margin: auto;
         overflow: hidden;
         position: relative;
-        width: 200px;
+        width: 260px !important;
     }
 
     /* project area */
@@ -507,6 +513,7 @@ footer.footer-area .copyrights .para {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 2rem;
     }
 
     .site-main .project-area .button-group {
@@ -518,6 +525,7 @@ footer.footer-area .copyrights .para {
 
     .site-main .project-area .button-group button {
         background: transparent;
+        color: var(--title-color);
         border: none;
         font: normal 500 10px var(--roboto);
         text-transform: uppercase;
@@ -527,31 +535,22 @@ footer.footer-area .copyrights .para {
     .arrow-btn {
         display: block;
         font-size: 20px;
+        color: var(--title-color) !important;
     }
 
-     /* about area */
+    /* about area */
     .site-main .about-area {
         padding: 3rem 5rem;
         margin: 2rem 0 5rem 0;
     }
-    
+
     .site-main .about-area .about-title .paragraph>p {
         padding: .4rem 0;
         text-align: justify;
     }
-    
+
     .site-main .about-area .about-extend {
         margin-top: 4rem;
-    }
-    
-    .site-main .about-area .about-extend p {
-        padding: 20px;
-        /* border: 2px solid; */
-        border-radius: 7px;
-        margin-top: 1rem;
-        box-shadow: 5px 5px 8px #8c8c8c;
-        background: rgba(64, 64, 64, 0.046);
-        transition: box-shadow .7s ease;
     }
 }
 
@@ -675,28 +674,19 @@ footer.footer-area .copyrights .para {
         font-size: 20px;
     }
 
-     /* about area */
+    /* about area */
     .site-main .about-area {
         padding: 3rem 5rem;
         margin: 2rem 0 5rem 0;
     }
-    
+
     .site-main .about-area .about-title .paragraph>p {
         padding: .4rem 0;
         text-align: justify;
     }
-    
+
     .site-main .about-area .about-extend {
         margin-top: 4rem;
     }
-    
-    .site-main .about-area .about-extend p {
-        padding: 20px;
-        /* border: 2px solid; */
-        border-radius: 7px;
-        margin-top: 1rem;
-        box-shadow: 5px 5px 8px #8c8c8c;
-        background: rgba(64, 64, 64, 0.046);
-        transition: box-shadow .7s ease;
-    }
+
 }
