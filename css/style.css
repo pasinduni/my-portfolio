@@ -92,7 +92,7 @@
     position: relative;
     z-index: 1;
     top: 3%;
-    left: 10%;
+    left: 5%;
 }
 
 .site-main .site-banner .banner-image::before {
@@ -105,7 +105,7 @@
     height: 20rem;
     /* Adjust size for the ring */
     border-radius: 50%;
-    background: linear-gradient(135deg, #4f20f77d, #2db7f74e);
+    background: linear-gradient(135deg, #4f20f77d, #a62df764);
     transform: translate(-50%, -50%);
     z-index: 1;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
