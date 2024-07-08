@@ -52,7 +52,7 @@
 /* Banner Area */
 
 .site-main {
-    background-color: #1d1d1d;
+    background-color: #121212;
     padding: 0 6rem;
 }
 
@@ -279,7 +279,7 @@
 .site-main .project-area .button-group button {
     background: transparent;
     border: none;
-    font: normal 500 16px/130px var(--roboto);
+    font: normal 500 16px/30px var(--content-text);
     text-transform: uppercase;
     margin-right: 10px;
     color: var(--text-color);
@@ -334,6 +334,7 @@
 .site-main .project-area .grid .project_Image {
     position: relative;
     overflow: hidden;
+    border-radius: 7px;
 }
 
 .site-main .project-area .grid .project_Image:hover .project-links {
@@ -374,19 +375,29 @@
 .site-main .contact-area .contact .contact-title .para {
     color: var(--text-color);
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .site-main .contact-area .contact-details {
     align-items: center;
-    margin: .5rem 8rem;
+    margin: .5rem 0;
     color: var(--text-color);
+    display: block;
+    padding: 0 2rem;
+}
+
+.site-main .contact-area .contact-details .text-center img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 4px 4px 5px #0e0e0e;
+    background: rgba(64, 64, 64, 0.046);
 }
 
 .site-main .contact-area .contact-details p {
-    padding: 12px;
-    border: .1px solid;
-    border-radius: 7px;
+    padding: 8px;
+    margin: 2rem;
 }
 
 .site-main .contact-area .contact-details a {
@@ -394,7 +405,7 @@
 }
 
 .site-main .contact-area .contact-details .text-center {
-    margin: .1rem .1rem;
+    /* margin: .1rem .1rem; */
 }
 
 /* End contact me */
