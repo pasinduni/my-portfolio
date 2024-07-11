@@ -1,84 +1,340 @@
-
-
-
-/* if the viewport is equal to 340px or less than that */ 
-@media only screen and (max-width: 340px){
+/* if the viewport is equal to 340px or less than that */
+/* @media only screen and (max-width: 340px){
     .header_area .main-menu .navbar,
     .header_area .main-menu .navbar .navbar-brand,
-    .site-main .subscribe-us-area .subscribe .subscribe-title,
-    .site-main .subscribe-us-area .subscribe .subscribe-title p, h4,
-    .site-main .services-area,
-    .site-main .subscribe-us-area .subscribe
+     h4
     {
         padding: 2%;
         margin: 0%;
     }
 
     .site-main .site-banner .site-title h1{
-        font-size: 41px;
+        font-size: 34px;
     }
 
-    .site-main .subscribe-us-area .subscribe form .input-textbox input{
-        width: 15rem    !important;
+} */
+
+
+/* if the viewport is equal to 428px or less than that */
+
+@media only screen and (max-width: 428px) {
+    .navbar_fixed {
+        position: fixed;
     }
 
-    .site-main > .services-area .services{
-        width: 13rem;
+    .header_area .main-menu .navbar .navbar-brand {
+        padding: 0 1rem;
     }
 
+    .site-main .site-banner .site-title h1,
+    .site-main .site-banner .site-title h1>.name {
+        font-size: 2.5rem;
+        color: var(--text-color);
+    }
+
+    .site-main .site-banner .site-title h1>.name {
+        color: #08b1ff;
+    }
+
+    .site-main .site-banner .site-title h4 {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        margin: 1rem auto;
+        color: var(--text-color);
+    }
+
+    .site-main .site-banner .banner-image {
+        position: relative;
+        padding: 7rem 0;
+    }
+
+    .site-main .site-banner .banner-image>img {
+        width: 15rem;
+        border-radius: 50%;
+        box-shadow: 4px 4px 4px 5px #0e0e0e;
+        position: relative;
+        z-index: 1;
+        top: 2%;
+        left: 5%;
+    }
+
+    /* contact area */
+    .site-main .contact-area .contact {
+        padding: 3rem 0;
+        margin: 1rem auto;
+    }
+
+    .site-main .contact-area .contact .contact-title .para {
+        color: rgb(117, 117, 117);
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .site-main .contact-area .contact-details {
+        align-items: center;
+        margin: .3rem 1rem;
+        color: var(--title-color);
+    }
+
+    .site-main .contact-area .contact-details p {
+        padding: 1px;
+        color: var(--text-color) !important;
+    }
+
+    .site-main .contact-area .contact-details .text-center {
+        margin: .1rem .1rem;
+    }
+
+    /* skills area */
+    .site-main .skills-area {
+        padding: 2rem 2rem;
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+        align-items: center;
+        display: flex;
+        height: 30vh;
+        justify-content: center;
+    }
+
+    .site-main .skills-area h2>span,
+    .site-main .project-area h2>span,
+    .site-main .about-area .about-title h2>span {
+        display: block;
+        font: 900 35px var(--title-text);
+        letter-spacing: 5px;
+        color: var(--title-color);
+        margin-bottom: 3rem;
+    }
+
+    .slider {
+        height: 250px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 260px !important;
+    }
+
+    /* project area */
+    .site-main .project-area {
+        padding: 1rem 0;
+    }
+
+    .site-main .project-area .grid .element-item {
+        margin-bottom: 8px;
+        padding-right: 0px;
+        padding-bottom: 7px;
+    }
+
+    .site-main .project-area .button-group-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .site-main .project-area .button-group {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        margin: 0 10px;
+    }
+
+    .site-main .project-area .button-group button {
+        background: transparent;
+        color: var(--title-color);
+        border: none;
+        font: normal 500 10px var(--roboto);
+        text-transform: uppercase;
+        display: flex;
+    }
+
+    .arrow-btn {
+        display: block;
+        font-size: 20px;
+        color: var(--title-color) !important;
+    }
+
+    /* about area */
+    .site-main .about-area {
+        padding: 3rem 5rem;
+        margin: 2rem 0 5rem 0;
+    }
+
+    .site-main .about-area .about-title .paragraph>p {
+        padding: .4rem 0;
+        text-align: justify;
+    }
+
+    .site-main .about-area .about-extend {
+        margin-top: 4rem;
+    }
 }
 
 
-/* if the viewport is equal to 340px or less than that */ 
-@media only screen and (max-width: 792px){
-    .site-main .about-area .about-title h2 > span{
-        font-size: 31px;
-        letter-spacing: 10px;
+/* if the viewport is equal to 792px or less than that */
+@media only screen and (max-width: 792px) {
+
+    .site-main {
+        padding: 0 .2rem;
     }
 
-    .site-main .brand-area .experience-area .years-area{
-        padding-left: 1%;
-        width: 49%;
+    .site-main .site-banner .site-title h1 {
+        font-size: 2.8rem;
+        color: var(--text-color);
+    }
+    
+    .site-main .site-banner .site-title h1 > span {
+        font-size: 1rem;
+        color: #08b1ff;
+    }
+    
+    .site-main .site-banner .site-title h1 > .name {
+        font-size: 2.8rem;
+        color: #08b1ff;
+    }
+    
+    .site-main .site-banner .site-title h4 {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        margin: 2rem auto;
+        color: var(--text-color);
     }
 
-    .site-main .brand-area .experience-area .bg-panel{
-        margin-left: 30%;
-        width: 80%;   
+    .site-main .site-banner .banner-image {
+        position: relative;
+        padding: 7rem 0;
     }
 
-    .site-main .brand-area .experience-area .call-area{
-        padding-left: 3%;
+    .site-main .site-banner .banner-image>img {
+        width: 15rem;
+        border-radius: 50%;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 1;
+        top: -10%;
+        left: 10%;
+    }
+    
+    .site-main .skills-area h2>span,
+    .site-main .project-area h2>span,
+    .site-main .about-area .about-title h2>span {
+        display: block;
+        font: 900 45px var(--title-text);
+        letter-spacing: 5px;
+        color: var(--title-color);
+        margin-bottom: 2rem;
     }
 
-    .site-main .project-area .button-group button{
-        font: normal 500 18px/40px var(--roboto);
+    /* contact area */
+    .site-main .contact-area .contact {
+        padding: 3rem 0;
+        margin: 1rem auto;
     }
 
-    .site-main .about-area .about-title p{
-        padding: 0%;
+    .site-main .contact-area .contact .contact-title .para {
+        color: rgb(117, 117, 117);
+        font-size: 1rem;
+        margin-bottom: 3rem;
     }
 
-    .site-main .subscribe-us-area .subscribe form .input-textbox input{
-        width: 20rem;
-        margin: 5%;
+    .site-main .contact-area .contact-details {
+        align-items: center;
+        margin: .3rem 2rem;
+        color: var(--title-color);
     }
-}
+
+    .site-main .contact-area .contact-details p {
+        padding: 12px;
+        color: var(--text-color) !important;
+    }
+
+    .site-main .contact-area .contact-details .text-center {
+        margin: .1rem .1rem;
+    }
+
+    /* skills area */
+    .site-main .skills-area {
+        padding: 2rem 2rem;
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+        align-items: center;
+        display: flex;
+        height: 30vh;
+        justify-content: center;
+    }
+
+    .slider {
+        height: 250px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 650px;
+    }
+
+    /* project area */
+    .site-main .project-area {
+        padding: 1rem 0;
+    }
+
+    .site-main .project-area .grid .element-item {
+        margin-bottom: 8px;
+        padding-right: 0px;
+        padding-bottom: 7px;
+    }
+
+    .site-main .project-area .button-group-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-main .project-area .button-group {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        margin: 0 10px;
+    }
+
+    .site-main .project-area .button-group button {
+        background: transparent;
+        border: none;
+        font: normal 500 10px var(--content-text);
+        text-transform: uppercase;
+        display: flex;
+    }
+
+    .arrow-btn {
+        display: block;
+        font-size: 20px;
+    }
+
+    /* about area */
+    .site-main .about-area {
+        padding: 3rem 2rem;
+        margin: 2rem 0 5rem 0;
+    }
+
+    .site-main .about-area .about-title .paragraph>p {
+        padding: .4rem 0;
+        text-align: justify;
+    }
+
+} 
 
 
 
-/* if the viewport is equal to 1910px or less than that */ 
-@media only screen and (max-width: 1910px){
-    .header_area .main-menu .navbar{
+/* if the viewport is equal to 1910px or less than that */
+@media only screen and (max-width: 1910px) {
+    .header_area .main-menu .navbar {
         padding: 1rem;
     }
 
-    .container{
+    .container {
         max-width: 90%;
     }
 
     .site-main .brand-area,
-    .site-main .services-area .services-title,
-    .site-main .about-area{
+    .site-main .about-area {
         padding: 3% 4%;
     }
 

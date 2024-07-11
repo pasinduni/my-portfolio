@@ -52,12 +52,12 @@
 /* Banner Area */
 
 .site-main {
-    background-color: #121212;
     padding: 0 6rem;
+    background: url(../img/parallax23.png);
 }
 
 .site-main .site-banner .site-title {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-top: 5%;
 }
 
@@ -105,11 +105,9 @@
     top: 50%;
     left: 50%;
     width: 18rem;
-    /* Adjust size for the ring */
     height: 20rem;
-    /* Adjust size for the ring */
     border-radius: 50%;
-    background: linear-gradient(135deg, #4f20f77d, #a62df764);
+    background: linear-gradient(135deg, #08b1ff54, #08b1ff45);
     transform: translate(-50%, -50%);
     z-index: 1;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -191,16 +189,6 @@
     overflow: hidden;
     position: relative;
     max-width: 1140px;
-}
-
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, #1d1d1d 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100px;
-    z-index: 2;
 }
 
 .slider::after {
@@ -305,7 +293,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 7px;
     background-color: rgba(23, 26, 43, 0.645);
     justify-content: center;
     align-items: center;
@@ -334,7 +321,6 @@
 .site-main .project-area .grid .project_Image {
     position: relative;
     overflow: hidden;
-    border-radius: 7px;
 }
 
 .site-main .project-area .grid .project_Image:hover .project-links {
@@ -428,280 +414,3 @@ footer.footer-area .copyrights .para {
 
 /* End Footer */
 
-
-
-@media only screen and (max-width: 428px) {
-    .header_area .main-menu .navbar .navbar-brand{
-        padding: 0 1rem ;
-    }
-
-    .site-main .site-banner .banner-image {
-        position: relative;
-        padding: 7rem 0;
-    }
-
-    .site-main .site-banner .banner-image>img {
-        width: 20rem;
-        border-radius: 50%;
-        border: 10px #8c8c8c;
-        border-style: ridge;
-        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
-        position: relative;
-        z-index: 1;
-        top: -10%;
-    }
-
-    /* contact area */
-    .site-main .contact-area .contact {
-        padding: 3rem 0;
-        margin: 1rem auto;
-    }
-
-    .site-main .contact-area .contact .contact-title .para {
-        color: rgb(117, 117, 117);
-        font-size: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .site-main .contact-area .contact-details {
-        align-items: center;
-        margin: .3rem 2rem;
-        color: var(--title-color);
-    }
-
-    .site-main .contact-area .contact-details p {
-        padding: 12px;
-        border: .1px solid;
-        border-radius: 7px;
-        color: var(--text-color) !important;
-    }
-
-    .site-main .contact-area .contact-details .text-center {
-        margin: .1rem .1rem;
-    }
-
-    /* skills area */
-    .site-main .skills-area {
-        padding: 2rem 2rem;
-        margin-bottom: 1rem;
-        margin-top: 5rem;
-        align-items: center;
-        display: flex;
-        height: 30vh;
-        justify-content: center;
-    }
-
-    .site-main .skills-area h2>span {
-        display: block;
-        font: normal bold 32px/ 60px var(--roboto);
-        letter-spacing: 18px;
-        color: #d5d4d4;
-    }
-
-    .slider {
-        height: 250px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        width: 260px !important;
-    }
-
-    /* project area */
-    .site-main .project-area {
-        padding: 1rem 0;
-    }
-
-    .site-main .project-area h2>span {
-        display: block;
-        font: normal bold 32px/60px var(--roboto);
-        letter-spacing: 18px;
-        color: #d5d4d4;
-    }
-
-    .site-main .project-area .grid .element-item {
-        margin-bottom: 8px;
-        padding-right: 0px;
-        padding-bottom: 7px;
-    }
-
-    .site-main .project-area .button-group-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-    }
-
-    .site-main .project-area .button-group {
-        display: flex;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        margin: 0 10px;
-    }
-
-    .site-main .project-area .button-group button {
-        background: transparent;
-        color: var(--title-color);
-        border: none;
-        font: normal 500 10px var(--roboto);
-        text-transform: uppercase;
-        display: flex;
-    }
-
-    .arrow-btn {
-        display: block;
-        font-size: 20px;
-        color: var(--title-color) !important;
-    }
-
-    /* about area */
-    .site-main .about-area {
-        padding: 3rem 5rem;
-        margin: 2rem 0 5rem 0;
-    }
-
-    .site-main .about-area .about-title .paragraph>p {
-        padding: .4rem 0;
-        text-align: justify;
-    }
-
-    .site-main .about-area .about-extend {
-        margin-top: 4rem;
-    }
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-
-    .site-main .site-banner .banner-image {
-        position: relative;
-        padding: 7rem 0;
-    }
-
-    .site-main .site-banner .banner-image>img {
-        width: 20rem;
-        border-radius: 50%;
-        border: 10px #8c8c8c;
-        border-style: ridge;
-        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
-        position: relative;
-        z-index: 1;
-        top: -10%;
-    }
-
-    /* contact area */
-    .site-main .contact-area .contact {
-        padding: 3rem 0;
-        margin: 1rem auto;
-    }
-
-    .site-main .contact-area .contact .contact-title .para {
-        color: rgb(117, 117, 117);
-        font-size: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .site-main .contact-area .contact-details {
-        align-items: center;
-        margin: .3rem 2rem;
-        color: var(--title-color);
-    }
-
-    .site-main .contact-area .contact-details p {
-        padding: 12px;
-        border: .1px solid;
-        border-radius: 7px;
-        color: var(--text-color) !important;
-    }
-
-    .site-main .contact-area .contact-details .text-center {
-        margin: .1rem .1rem;
-    }
-
-    /* skills area */
-    .site-main .skills-area {
-        padding: 2rem 2rem;
-        margin-bottom: 1rem;
-        margin-top: 5rem;
-        align-items: center;
-        display: flex;
-        height: 30vh;
-        justify-content: center;
-    }
-
-    .site-main .skills-area h2>span {
-        display: block;
-        font: normal bold 32px/ 60px var(--roboto);
-        letter-spacing: 18px;
-        color: #d5d4d4;
-    }
-
-    .slider {
-        height: 250px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        width: 650px;
-    }
-
-    /* project area */
-    .site-main .project-area {
-        padding: 1rem 0;
-    }
-
-    .site-main .project-area h2>span {
-        display: block;
-        font: normal bold 32px/60px var(--roboto);
-        letter-spacing: 18px;
-        color: #d5d4d4;
-    }
-
-    .site-main .project-area .grid .element-item {
-        margin-bottom: 8px;
-        padding-right: 0px;
-        padding-bottom: 7px;
-    }
-
-    .site-main .project-area .button-group-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .site-main .project-area .button-group {
-        display: flex;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        margin: 0 10px;
-    }
-
-    .site-main .project-area .button-group button {
-        background: transparent;
-        border: none;
-        font: normal 500 10px var(--roboto);
-        text-transform: uppercase;
-        display: flex;
-    }
-
-    .arrow-btn {
-        display: block;
-        font-size: 20px;
-    }
-
-    /* about area */
-    .site-main .about-area {
-        padding: 3rem 5rem;
-        margin: 2rem 0 5rem 0;
-    }
-
-    .site-main .about-area .about-title .paragraph>p {
-        padding: .4rem 0;
-        text-align: justify;
-    }
-
-    .site-main .about-area .about-extend {
-        margin-top: 4rem;
-    }
-
-}
