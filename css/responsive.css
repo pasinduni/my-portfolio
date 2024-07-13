@@ -20,10 +20,24 @@
 @media only screen and (max-width: 428px) {
     .navbar_fixed {
         position: fixed;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .header_area .main-menu .navbar {
+        padding: 1rem .2rem;
     }
 
     .header_area .main-menu .navbar .navbar-brand {
         padding: 0 1rem;
+    }
+
+    .site-main {
+        padding: 1rem;
+    }
+
+    .site-main .site-banner .site-title h1>span {
+        font-size: 1rem;
+        color: #08b1ff;
     }
 
     .site-main .site-banner .site-title h1,
@@ -64,36 +78,43 @@
         margin: 1rem auto;
     }
 
+    .site-main .contact-area .contact .contact-title h4 {
+        color: var(--title-color);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
     .site-main .contact-area .contact .contact-title .para {
         color: rgb(117, 117, 117);
         font-size: 1rem;
         margin-bottom: 3rem;
     }
 
-    .site-main .contact-area .contact-details {
+    .site-main .contact-container {
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
         margin: .3rem 1rem;
         color: var(--title-color);
     }
 
-    .site-main .contact-area .contact-details p {
+    .site-main .contact-container p {
         padding: 1px;
         color: var(--text-color) !important;
     }
 
-    .site-main .contact-area .contact-details .text-center {
-        margin: .1rem .1rem;
-    }
 
     /* skills area */
     .site-main .skills-area {
-        padding: 2rem 2rem;
+        /* padding: 2rem .2rem; */
         margin-bottom: 1rem;
-        margin-top: 5rem;
+        margin-top: 3rem;
         align-items: center;
         display: flex;
-        height: 30vh;
+        height: 25vh;
         justify-content: center;
+    }
+    .site-main .skills-area .container{
+        padding-left: 0px;
     }
 
     .site-main .skills-area h2>span,
@@ -104,6 +125,7 @@
         letter-spacing: 5px;
         color: var(--title-color);
         margin-bottom: 3rem;
+        margin-left: 0rem;
     }
 
     .slider {
@@ -156,7 +178,7 @@
 
     /* about area */
     .site-main .about-area {
-        padding: 3rem 5rem;
+        padding:  0rem;
         margin: 2rem 0 5rem 0;
     }
 
@@ -172,27 +194,39 @@
 
 
 /* if the viewport is equal to 792px or less than that */
-@media only screen and (max-width: 792px) {
+@media only screen and (min-width:429px) and (max-width: 792px) {
+    .navbar_fixed {
+        position: fixed;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .header_area .main-menu .navbar {
+        padding: 1rem .2rem;
+    }
+
+    .header_area .main-menu .navbar .navbar-brand {
+        padding: 0 1rem;
+    }
 
     .site-main {
-        padding: 0 .2rem;
+        padding: 1rem;
     }
 
     .site-main .site-banner .site-title h1 {
         font-size: 2.8rem;
         color: var(--text-color);
     }
-    
-    .site-main .site-banner .site-title h1 > span {
+
+    .site-main .site-banner .site-title h1>span {
         font-size: 1rem;
         color: #08b1ff;
     }
-    
-    .site-main .site-banner .site-title h1 > .name {
+
+    .site-main .site-banner .site-title h1>.name {
         font-size: 2.8rem;
         color: #08b1ff;
     }
-    
+
     .site-main .site-banner .site-title h4 {
         font-size: 1.1rem;
         line-height: 2rem;
@@ -212,9 +246,9 @@
         position: relative;
         z-index: 1;
         top: -10%;
-        left: 10%;
+        left: 15%;
     }
-    
+
     .site-main .skills-area h2>span,
     .site-main .project-area h2>span,
     .site-main .about-area .about-title h2>span {
@@ -237,20 +271,18 @@
         margin-bottom: 3rem;
     }
 
-    .site-main .contact-area .contact-details {
+    .site-main .contact-container {
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        margin: .3rem 2rem;
+        margin: .3rem 1rem;
         color: var(--title-color);
     }
 
-    .site-main .contact-area .contact-details p {
-        padding: 12px;
+    .site-main .contact-container p {
+        padding: 1px;
         color: var(--text-color) !important;
     }
 
-    .site-main .contact-area .contact-details .text-center {
-        margin: .1rem .1rem;
-    }
 
     /* skills area */
     .site-main .skills-area {
@@ -268,7 +300,7 @@
         margin: auto;
         overflow: hidden;
         position: relative;
-        width: 650px;
+        max-width: 1140px;
     }
 
     /* project area */
@@ -319,24 +351,46 @@
         text-align: justify;
     }
 
-} 
+}
 
 
 
 /* if the viewport is equal to 1910px or less than that */
-@media only screen and (max-width: 1910px) {
+@media only screen and (min-width: 793px) and (max-width: 1280px) {
     .header_area .main-menu .navbar {
         padding: 1rem;
     }
 
-    .container {
-        max-width: 90%;
-    }
-
-    .site-main .brand-area,
     .site-main .about-area {
-        padding: 3% 4%;
+        padding: .1rem;
+        margin: 3rem 0 4rem 0;
     }
 
+    .site-main .skills-area {
+        height: 40vh;
+    }
+
+    .site-main .contact-area .contact {
+        padding: 3rem 0;
+        margin: 1rem auto;
+    }
+
+    .site-main .contact-area .contact .contact-title .para {
+        color: rgb(117, 117, 117);
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .site-main .contact-container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        margin: .3rem 1rem;
+        color: var(--title-color);
+    }
+
+    .site-main .contact-container p {
+        padding: 1px;
+        color: var(--text-color) !important;
+    }
 
 }

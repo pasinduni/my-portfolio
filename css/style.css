@@ -8,7 +8,7 @@
 /* start navigation */
 
 .header_area .main-menu .navbar .navbar-brand {
-    padding: 0 2rem 0 4rem;
+    padding: 0 4rem 0 2rem;
     color: var(--text-color)
 }
 
@@ -19,7 +19,7 @@
 .header_area .main-menu .navbar .navbar-brand span {}
 
 .header_area .main-menu .navbar {
-    padding: 1rem 20rem;
+    padding: 1rem 5rem;
 }
 
 .header_area .main-menu .nav-item .nav-link {
@@ -53,7 +53,7 @@
 
 .site-main {
     padding: 0 6rem;
-    background: url(../img/parallax23.png);
+    background: url(../img/parallax23.png) fixed;
 }
 
 .site-main .site-banner .site-title {
@@ -89,14 +89,14 @@
 }
 
 .site-main .site-banner .banner-image>img {
-    width: 25rem;
+    width: 28rem;
     border-radius: 50%;
     border: 1px #8c8c8c;
     box-shadow: 4px 4px 4px 5px #0e0e0e;
     position: relative;
     z-index: 1;
     top: 2%;
-    left: 5%;
+    left: 3%;
 }
 
 .site-main .site-banner .banner-image::before {
@@ -118,61 +118,21 @@
 /* End Banner Area */
 
 
-/* Start About Area */
-
-.site-main .about-area {
-    padding: 5rem;
-    margin: 3rem 0 4rem 0;
-}
-
-.site-main .about-area .row {
-    grid-row: 2px;
-}
-
-.site-main .about-area .about-title h2>span {
-    display: block;
-    font: 900 55px var(--title-text);
-    letter-spacing: 5px;
-    color: var(--title-color);
-    margin-bottom: 3rem;
-}
-
-.site-main .about-area .about-title .paragraph>p {
-    padding: .4rem 0;
-    text-align: justify;
-}
-
-.site-main .about-area .about-extend {
-    margin-top: 12rem;
-}
-
-.site-main .about-area .about-extend p {
-    padding: 20px;
-    /* border: 2px solid; */
-    border-radius: 7px;
-    margin-top: 1rem;
-    box-shadow: 4px 4px 5px #0e0e0e;
-    background: rgba(64, 64, 64, 0.046);
-    transition: box-shadow .7s ease;
-}
-
-.site-main .about-area .about-extend span {
-    margin-left: 5rem;
-}
-
-/* End About Area */
 
 
 /* Start Skills Area */
 
 .site-main .skills-area {
-    padding: 5rem ;
+    padding: 0rem;
     margin-bottom: 2rem;
     margin-top: .5rem;
-    /* align-items: center;
-    display: flex; */
+    display: block;
     height: 60vh;
     justify-content: center;
+}
+
+.site-main .skills-area > div{
+    margin-top: 5rem;
 }
 
 .site-main .skills-area h2>span {
@@ -181,6 +141,7 @@
     letter-spacing: 5px;
     color: var(--title-color);
     margin-bottom: 5rem;
+    margin-left: 0rem;
 }
 
 .slider {
@@ -241,8 +202,13 @@
 /* Project Area */
 
 .site-main .project-area {
-    margin-top: 5rem;
+    margin-top: 4rem;
     padding: 2rem 0;
+}
+
+.site-main .project-area .container{
+    padding-left: 0px;
+
 }
 
 .site-main .project-area h2>span {
@@ -344,8 +310,63 @@
 /* End Project Area */
 
 
+
+/* Start About Area */
+
+.site-main .about-area {
+    padding: 5rem;
+    margin: 3rem 0 4rem 0;
+}
+
+.site-main .about-area .row {
+    grid-row: 2px;
+}
+
+.site-main .about-area .about-title h2>span {
+    display: block;
+    font: 900 55px var(--title-text);
+    letter-spacing: 5px;
+    color: var(--title-color);
+    margin-bottom: 3rem;
+}
+
+.site-main .about-area .about-title .paragraph>p {
+    padding: .4rem 0;
+    text-align: justify;
+}
+
+.site-main .about-area .about-extend {
+    margin-top: 12rem;
+}
+
+.site-main .about-area .about-extend p {
+    padding: 20px;
+    /* border: 2px solid; */
+    border-radius: 7px;
+    margin-top: 1rem;
+    box-shadow: 4px 4px 5px #0e0e0e;
+    background: #4040400c;
+    transition: box-shadow .7s ease;
+}
+
+.site-main .about-area .about-extend span {
+    margin-left: 5rem;
+}
+
+/* End About Area */
+
+
+
+
+
+
+
 /* contact me */
 
+.site-main .contact-area .container{
+    padding-left: 0px;
+
+}
 .site-main .contact-area .contact {
     padding: 2rem 0;
     margin: 2rem auto;
@@ -359,12 +380,49 @@
 }
 
 .site-main .contact-area .contact .contact-title .para {
-    color: var(--text-color);
+    color: #08b1ff;
     font-size: 1rem;
     margin-bottom: 5rem;
 }
 
-.site-main .contact-area .contact-details {
+.contact-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    padding: 0px;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-container > div {
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 18px;
+    box-shadow: 4px 4px 5px #0e0e0e;
+    background: #0000004f;
+  }
+
+  .contact-container > div > img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    padding: 12px;
+    margin: 1.5rem;
+    box-shadow: 4px 4px 5px #0e0e0e;
+    background: #00000024;
+  }
+
+  .contact-container > div > a, 
+  .contact-container > div > p {
+    color: var(--text-color);
+  }
+  
+
+
+
+
+
+
+/* .site-main .contact-area .contact-details {
     align-items: center;
     margin: .5rem 0;
     color: var(--text-color);
@@ -390,9 +448,9 @@
     color: var(--text-color);
 }
 
-.site-main .contact-area .contact-details .text-center {
+.site-main .contact-area .contact-details .text-center { */
     /* margin: .1rem .1rem; */
-}
+
 
 /* End contact me */
 
