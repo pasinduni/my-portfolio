@@ -13,8 +13,8 @@ html, body{
 /* CSS Variables */ 
 
 :root{
-    --title-color: #969696;
-    --text-color: #645f5f;    
+    --title-color: #ffffff;
+    --text-color: #efefef;    
     --shadow-color:  0px 10px 30px #08b1ff2d;;
     --box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.473);
    
